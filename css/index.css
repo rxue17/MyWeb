@@ -29,17 +29,55 @@
 				text-align: left;
 				margin:0;
 			}
-			a{
-				text-decoration: none;
+			
+			#nav{
+				width:960px;
+				height: 40px;
+				/*margin: 0 auto;*/
+				padding:0;
+				margin-bottom: 10px;
+
 			}
-			a:hover{
-				color: yellow;
-			}
-			#nav
+			#nav ul
 			{
 				width:960px;
-				height: 60px;
-				margin: 0 auto;
+				height: 40px;
+				position: relative;
+				background: #333;
+				color: white;
+				padding:0;
+				text-align: center;
+				line-height: 40px;
+			}
+			#nav li
+			{
+				display: inline;
+				
+			}
+			#nav li a{
+				position: absolute;
+				top:0;
+				display: block;
+				height: 40px;
+				width:208px;
+				text-decoration: none;
+				color:white;
+			}
+			#nav li a:link{
+				color:white;
+			}
+			#nav li a:hover{
+				color:#333;
+				background:white;
+			}
+			a[title="Home"]{
+				left:0;
+			}
+			a[title="Blog"]{
+				left:208px;
+			}
+			a[title="Contant"]{
+				left:416px;
 			}
 			#ContantWrapper{
 				width: 960px;
@@ -49,4 +87,16 @@
 			}
 			div#footer{
 				text-align: center;
+			}
+
+
+
+			a{
+				text-decoration: none;
+			}
+			a:link{
+				color: #ff8447
+			}
+			a:hover{
+				color: #478cff;
 			}
