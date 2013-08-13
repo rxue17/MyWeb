@@ -42,10 +42,13 @@
 				float:left;
 				background: white;
 			}
-			#SignIn{
+			#Login{
 				width:315px;
 				margin:0 auto;
+				padding:0;
 				border:1px solid #ccc;
+				border-bottom-color: #444;
+				border-radius: 5px;
 				float:right;
 				left:642px;
 				background: white;
@@ -68,8 +71,13 @@
 				<div id="SignUp">
 					
 				</div>
-				<div id="SignIn">
-					
+				<div id="Login">
+					<form>
+						<h1>Sign In</h1>
+						<input type="text" name="uid" placeholder="Name" class="LoginInput">
+						<input type="text" name="pwd" placeholder="Password" class="LoginInput">
+						<input type="submit" name="Login" value="Sign In" class="LoginSubmit">
+					</form>
 				</div>
 			</div>
 			<div id="footer">
