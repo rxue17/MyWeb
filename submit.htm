@@ -4,6 +4,63 @@
 		<title>
 			Sign In|Sign Up
 		</title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+				border:0;
+			}
+			body{
+				margin:0;
+				padding:0;
+				min-width: 960px;
+				height:auto;
+				background: #f0f0f0;
+			}
+			#wrapper{
+				margin:0 auto;
+				padding:0;
+				width:960px;
+				height: 400px;
+			}
+			#header{
+				width:960px;
+				height:0;
+				text-align: left;
+			}
+			#contant{
+				width:960px;
+				height:300px;
+				clear: both;
+				margin: 58px auto;
+			}
+
+			#SignUp{
+				width:635px;
+				margin:0 auto;
+				border:1px solid #ccc;
+				float:left;
+				background: white;
+			}
+			#SignIn{
+				width:315px;
+				margin:0 auto;
+				border:1px solid #ccc;
+				float:right;
+				left:642px;
+				background: white;
+			}
+
+			#footer{
+				text-align: center;
+			}
+
+			/*submit*/
+			.Formtxt{
+				width:120px;
+				height: 35px;
+			}
+		</style>
 	</head>
 	<body>
 		<div id="wrapper">
@@ -13,24 +70,30 @@
 			</div>
 			<div id="contant">
 				<div id="SignUp">
+					<form>
 					<h3>Sign Up</h3>
-					<label>Name:</label>
-					<input type="text"/>
-					<label>Password:</label>
-					<input type="text" />
-					<input type="button" value="clear" />
-					<input type="button" value="Sign up"/>
+					<label>Name:</label><input name="UpNameTxt" type="text" class="FormTxt">
+					<label>Password:</label><input name="UpwdTxt" type="text" class="FormTxt">
+					<input name="ClearBtn" type="submit" value="Clear"><input name="UpBtn" type="submit" value="Sign up" class="FormBtn">
+					</form>
 				</div>
-				<div id="SignIn">					
+				<div id="SignIn">
+					<form>					
 					<h3>Sign In</h3>
 					<label>Name:</label>
-					<input type="text"/>
+					<input type="text" placeholder="Name">
 					<label>Password:</label>
-					<input type="text" />
-					<input type="button" value="Sign In" />
+					<input type="text" placeholder="Password" >
+					<input type="submit" value="Login">
+					</form>
+
+
 				</div>
 			</div>
-			<div id="footer"></div>
+			<div id="footer">
+				<h4 >WelCome!</h4>
+				<p>Contant to me:<address>rxue17@gmail.com</address></p>
+			</div>
 		</div>
 	</body>
 </html>
