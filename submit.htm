@@ -37,10 +37,33 @@
 
 			#SignUp{
 				width:635px;
-				margin:0 auto;
-				border:1px solid #ccc;
+				height: 250px;
+				margin:5pz 31px;
 				float:left;
 				background: white;
+			}
+			.RegInput{
+				width:450px;
+				height: 37px;
+				margin:5px 31px;
+				padding:0 9px;
+				border:1px solid #ccc;
+				border-radius:4px;
+				line-height: 35px;
+			}
+			.RegInput{
+				outline: 0;
+			}
+			.RegSubmit{
+				width:150px;
+				height: :37px;
+				margin:5px 31px;
+				border:1px solid #ccc;
+				border-radius: 4px;
+				background: #ccc;
+				color:#444;
+				cursor: pointer;
+				line-height: 37px;
 			}
 			#Login{
 				width:315px;
@@ -68,9 +91,6 @@
 			.LoginInput:focus{
 				outline: 0;
 			}
-			#footer{
-				text-align: center;
-			}
 			.LoginSubmit{
 				width:252px;
 				height: :37px;
@@ -82,7 +102,9 @@
 				cursor: pointer;
 				line-height: 37px;
 			}
-			
+			#footer{
+				text-align: center;
+			}
 		</style>
 	</head>
 	<body>
@@ -93,7 +115,14 @@
 			</div>
 			<div id="contant">
 				<div id="SignUp">
-					
+					<form>
+						<h1>Sign Up</h1>
+						<input type="text" name="uid" class="RegInput" placeholder="Name">
+						<input type="text" name="pwd" class="RegInput" placeholder="Password">
+						<input type="submit" name="clear" class="RegSubmit" value="Clear">
+						<input type="submit" name="clear" class="RegSubmit" value="Sign Up ">
+						
+					</form>
 				</div>
 				<div id="Login">
 					<form>
